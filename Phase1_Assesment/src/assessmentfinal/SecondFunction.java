@@ -18,10 +18,10 @@ public class SecondFunction {
 					System.out.println("    3. Search for a file");
 					System.out.println("    4. Go back to the previous menu");
 					System.out.println("\nEnter your Choice: ");
-					int opt= sjn.nextInt();
+					String opt= sjn.next();
 					switch (opt)
 					{
-					case 1 :             
+					case "1" :             
 						try
 						{
 							System.out.println("Enter the name of the file to be created...");
@@ -33,7 +33,7 @@ public class SecondFunction {
 						}                         
 						break;   
             
-					case 2 : 
+					case "2" : 
 						try
 						{
 							System.out.println("Enter the name of the file to be deleted...");
@@ -45,7 +45,7 @@ public class SecondFunction {
 						}
 						break;  
         
-					case 3 : 
+					case "3" : 
 						try
 						{
 							System.out.println("Enter the name of the file to be searched...");
@@ -56,7 +56,7 @@ public class SecondFunction {
 							System.out.println("Error : "+e.getMessage());
 						}
 						break;
-					case 4 : 
+					case "4" : 
 						try
 						{
 							System.out.println("Returning back to the previous menu");

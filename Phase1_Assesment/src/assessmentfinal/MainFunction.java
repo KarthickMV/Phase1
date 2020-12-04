@@ -39,10 +39,11 @@ public class MainFunction {
 					System.out.println("    3. To exit from the application");
 					System.out.println("\nEnter your Choice: ");
 
-					int option = scn.nextInt();
+					String option = scn.next();
+					
 					switch (option)
 					{
-					case 1 : 
+					case "1" : 
 						try
 						{
 							f.list(path,dir);
@@ -53,7 +54,7 @@ public class MainFunction {
 						}                         
 						break;   
             
-					case 2 : 
+					case "2" : 
 						try
 						{
 							s.toggle(dir,path);
@@ -64,7 +65,7 @@ public class MainFunction {
 						}
 						continue;  
         
-					case 3 : 
+					case "3" : 
 						try
 						{
 							System.out.println("Are you sure to exit ? (Type Yes or No)");
@@ -79,7 +80,7 @@ public class MainFunction {
 						break;                            
                           
 					default : System.out.println("Wrong Entry \n ");
-						break;
+					break;
 					}
 					System.out.println("\n Do you want to continue ? (Type yes or no)");
 					ch = scn.next();
